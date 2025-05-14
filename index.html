@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaría de Planeamiento Educativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Contenedor de partículas -->
+    <div id="particles-js"></div>
+    
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo-wrapper" id="animated-logo">
+                <img src="logo.svg" alt="Logo Secretaría de Planeamiento Educativo" class="logo">
+                <!-- Las partículas se generarán aquí via JS -->
+            </div>
+            <h1>Secretaría de <span>Planeamiento Educativo</span></h1>
+            <p class="subtitle">Gestión Integral del Sistema Educativo</p>
+        </div>
+        
+        <div class="buttons-container">
+            <a href="https://ortiz371.github.io/githubresoluciones/" class="btn">
+                <i class="fas fa-file-alt"></i>
+                <span>Resoluciones S.P.E</span>
+            </a>
+            <a href="#" class="btn">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Mapa Educativo Provincial</span>
+            </a>
+            <a href="#" class="btn">
+                <i class="fas fa-lock"></i>
+                <span>Mapa Reservado</span>
+            </a>
+            <a href="#" class="btn">
+                <i class="fas fa-school"></i>
+                <span>Padrón de Establecimiento</span>
+            </a>
+        </a>
+        <a href="#" class="btn">
+            <i class="fas fa-server"></i> <!-- Icono de servidor -->
+            <span>Infraestructura</span>
+        </a>
+    </a>
+    <a href="#" class="btn">
+        <i class="fas fa-tasks"></i> <!-- Icono de tareas organizadas -->
+        <span>Administración de Procesos</span>
+    </a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>© <span id="current-year"></span> Secretaría de Planeamiento Educativo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        // Plan B si el primer CDN falla
+        if(typeof particlesJS === 'undefined') {
+            document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"><\/script>');
+        }
+    </script>
+    <script src="particles-config.js"></script>
+    <script src="logo-particles.js"></script>
+    <script>
+        // Año actual
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
